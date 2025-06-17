@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProgPad – Lär programmering med klossar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img src="images/progpad-logo.png" alt="ProgPad logotyp" class="logo">
+  <div class="slogan">
+    Lär ut programmering med klossar – konkret, begripligt och engagerande för grundskolan
+  </div>
+
+  <section class="video-section">
+    <div class="video-thumbnail-wrapper" id="video-thumb-wrapper">
+      <img src="images/video-thumbnail.jpg" alt="Videotumnagel för ProgPad" class="video-thumbnail-img" draggable="false">
+    </div>
+    <button class="video-btn-below" id="show-video">
+      <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polygon points="5,3 23,14 5,25" fill="#fff" stroke="#fff"/></svg>
+      Se demovideo
+    </button>
+  </section>
+
+  <div class="video-popup-bg" id="video-bg" style="display:none;">
+    <div class="close-btn-outer">
+      <button class="close-btn" id="close-video" aria-label="Stäng video">&times;</button>
+    </div>
+    <div class="video-popup">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7_8Isylvksc?si=DlFJyn_fMkr6FM1H" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <section>
+    <div class="contact-card">
+      <h2>Intresserad av demo eller har frågor?</h2>
+      <p>
+        Kontakta oss så berättar vi gärna mer och svarar på frågor om teknik, pedagogik och möjligheter att testa ProgPad i er verksamhet!
+      </p>
+      <div class="email-list">
+        <div class="email-address" tabindex="0">
+          <svg width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="15" height="11" rx="2"/><path d="M2 4l7.5 5.1a2 2 0 0 0 2 0L17 4"/>
+          </svg>
+          patreri@kth.se
+        </div>
+        <div class="email-address" tabindex="0">
+          <svg width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="15" height="11" rx="2"/><path d="M2 4l7.5 5.1a2 2 0 0 0 2 0L17 4"/>
+          </svg>
+          gustavke@kth.se
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> ProgPad
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+
+    const showBtn = document.getElementById('show-video');
+    const popup = document.getElementById('video-bg');
+    const closeBtn = document.getElementById('close-video');
+    showBtn.onclick = () => { popup.style.display = 'flex'; };
+    closeBtn.onclick = () => { popup.style.display = 'none'; };
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") popup.style.display = 'none';
+    });
+    popup.addEventListener('mousedown', function(e) {
+      if (e.target === popup) popup.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
+

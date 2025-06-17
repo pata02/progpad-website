@@ -1,0 +1,283 @@
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(120deg, #fcfefd 0%, #f1f8f4 65%, #f8fbfa 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.logo {
+  max-width: 320px;
+  width: 38vw;
+  min-width: 130px;
+  margin-top: 40px;
+  margin-bottom: 14px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 4px 18px #bbf7d0aa);
+  animation: fadeInDown 1.1s cubic-bezier(.61,.01,.53,.98) 0.05s both;
+  transition: filter 0.2s;
+}
+.logo:hover {
+  filter: drop-shadow(0 12px 36px #22c55e40);
+}
+.slogan {
+  color: #23272a;
+  font-size: 1.18rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  text-shadow: 0 1px 4px #ffffffd2;
+  animation: fadeInDown 1.1s cubic-bezier(.61,.01,.53,.98) 0.19s both;
+  max-width: 90vw;
+}
+@media (max-width: 600px) {
+  .logo { max-width: 64vw; }
+  .slogan { font-size: 1.02rem; }
+}
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 36px;
+  animation: fadeInUp 1.1s cubic-bezier(.4,0,.2,1) 0.24s both;
+}
+.video-thumbnail-wrapper {
+  border-radius: 1.5rem;
+  box-shadow:
+    0 6px 24px 0 #99e5c8aa,
+    0 0 0 10px #ffffffee;
+  overflow: hidden;
+  width: 480px;
+  height: 270px;
+  max-width: 98vw;
+  margin-bottom: 18px;
+  background: #e1efe5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.18s;
+}
+.video-thumbnail-wrapper:hover {
+  box-shadow: 0 12px 40px 0 #22c55e55, 0 0 0 10px #ffffffdd;
+}
+.video-thumbnail-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  filter: brightness(0.95) contrast(1.07);
+  background: #d1fae5;
+  user-select: none;
+  pointer-events: none;
+}
+.video-btn-below {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(90deg, #22c55e 0%, #6ee7b7 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 15px 34px;
+  font-size: 1.10rem;
+  text-decoration: none;
+  box-shadow: 0 4px 18px 0 rgba(16, 185, 129, 0.15);
+  cursor: pointer;
+  transition: background 0.16s, box-shadow 0.18s, transform 0.12s;
+  outline: none;
+  border: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: -5px;
+  animation: pulseBtn 2s infinite cubic-bezier(.56,.1,.29,.98) 2.0s;
+  z-index: 2;
+}
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-38px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(34px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulseBtn {
+  0%,100% { box-shadow: 0 3px 13px 0 rgba(16, 185, 129, 0.09); }
+  60% { box-shadow: 0 0px 26px 5px #bbf7d0bb; }
+}
+.video-btn-below:hover {
+  background: linear-gradient(90deg, #6ee7b7 0%, #22c55e 100%);
+  transform: scale(1.04);
+}
+.video-popup-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(12, 20, 12, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  animation: fadeIn 0.33s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.video-popup {
+  position: relative;
+  background: #181f18;
+  border-radius: 1.4rem;
+  box-shadow: 0 12px 44px 0 #4ade80aa;
+  padding: 1.1rem;
+  max-width: 96vw;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: popInVideo 0.44s cubic-bezier(.46,1.51,.6,1) both;
+}
+@keyframes popInVideo {
+  0% { opacity: 0; transform: scale(0.88) translateY(40px);}
+  100% { opacity: 1; transform: scale(1) translateY(0);}
+}
+.video-popup iframe {
+  border: none;
+  width: 72vw;
+  height: 40vw;
+  max-width: 890px;
+  max-height: 500px;
+  min-width: 260px;
+  min-height: 160px;
+  background: #000;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 #22c55e22;
+}
+.close-btn-outer {
+  position: fixed;
+  top: 35px;
+  right: 46px;
+  z-index: 101;
+}
+@media (max-width: 800px) {
+  .video-thumbnail-wrapper,
+  .contact-card {
+    width: 98vw !important;
+    max-width: 98vw !important;
+    min-width: 0 !important;
+  }
+  .video-thumbnail-wrapper {
+    height: 56vw;
+    max-height: 60vw;
+  }
+}
+@media (max-width: 600px) {
+  .close-btn-outer { top: 10px; right: 8px; }
+  .video-popup iframe {
+    width: 92vw;
+    height: 51vw;
+  }
+  .logo {
+    max-width: 64vw;
+  }
+}
+.close-btn {
+  background: #fff;
+  color: #15803d;
+  border: none;
+  font-size: 2.2rem;
+  font-weight: 900;
+  border-radius: 100%;
+  width: 46px; height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 9px #22c55e30;
+  transition: background 0.14s, color 0.14s;
+}
+.close-btn:hover {
+  background: #22c55e;
+  color: #fff;
+}
+.contact-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px 0 rgba(16,185,129,0.09);
+  padding: 2rem 2.2rem 1.5rem 2.2rem;
+  margin-top: 20px;
+  width: 480px;
+  max-width: 98vw;
+  text-align: center;
+  animation: fadeInUp 1.1s cubic-bezier(.4,0,.2,1) 1.3s both;
+}
+.contact-card h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #22c55e;
+}
+.contact-card p {
+  color: #475569;
+  margin: 0 0 18px 0;
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+.email-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  align-items: center;
+}
+.email-address {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f1f8f4;
+  color: #222;
+  font-weight: 500;
+  font-size: 1.09rem;
+  border-radius: 1rem;
+  padding: 11px 22px;
+  font-family: 'Inter', monospace, Arial, sans-serif;
+  box-shadow: 0 1px 4px #a7f3d0aa;
+  border: 1.2px solid #bbf7d0;
+  user-select: all;
+  cursor: text;
+  transition: box-shadow 0.15s, border 0.14s;
+}
+.email-address:hover, .email-address:focus {
+  box-shadow: 0 2px 12px #6ee7b755;
+  border: 1.2px solid #22c55e;
+  background: #edfaf2;
+}
+.email-address svg {
+  color: #22c55e;
+  flex-shrink: 0;
+  opacity: 0.75;
+}
+footer {
+  margin-top: 46px;
+  color: #9ca3af;
+  font-size: 0.98rem;
+  text-align: center;
+  width: 100%;
+  letter-spacing: .01em;
+  text-shadow: 0 1px 0 #fff4;
+  animation: fadeIn 1.1s 2.1s backwards;
+  margin-bottom: 18px;
+}
