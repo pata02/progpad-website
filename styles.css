@@ -192,9 +192,19 @@ body {
   .logo {
     max-width: 64vw;
   }
+  .video-popup {
+    padding: 0.4rem;
+    box-shadow: 0 6px 20px 0 #4ade80aa;
+  }
+
+  .video-popup iframe {
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px 0 #4ade8090;
+  }
+
 }
 .close-btn {
-  background: #fff;
+  background: transparent;
   color: #15803d;
   border: none;
   font-size: 2.2rem;
@@ -205,11 +215,9 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 2px 9px #22c55e30;
-  transition: background 0.14s, color 0.14s;
+  transition: color 0.14s;
 }
 .close-btn:hover {
-  background: #22c55e;
   color: #fff;
 }
 .contact-card {
