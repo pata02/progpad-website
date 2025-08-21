@@ -2,6 +2,7 @@
 :root {
     --primary: hsl(118, 100%, 40%);
     --primary-foreground: hsl(0, 0%, 100%);
+
     --primary-glow: hsl(221, 91%, 70%);
     --secondary: hsl(221, 91%, 75%);
     --secondary-foreground: hsl(0, 0%, 100%);
@@ -13,10 +14,13 @@
     --accent-foreground: hsl(0, 0%, 100%);
     --border: hsl(220, 13%, 91%);
     --input: hsl(220, 13%, 91%);
-    --gradient-primary: linear-gradient(135deg, hsl(118, 91%, 40%), hsl(118, 91%, 50%));
+    --gradient-primary: linear-gradient(135deg, hsl(187, 98%, 46%), hsl(196, 91%, 40%));
     --gradient-secondary: linear-gradient(135deg, hsl(221, 91%, 60%), hsl(221, 91%, 75%));
+    
     --gradient-hero: linear-gradient(to right, hsl(217, 91%, 60%), hsl(157, 91%, 40%), hsl(142, 76%, 36%));
-    --gradient-hero-green: linear-gradient(to right, hsl(138, 100%, 50%), hsl(118, 100%, 40%));
+    /* --gradient-hero-green: linear-gradient(to right, hsl(138, 100%, 50%), hsl(118, 100%, 40%)); */
+    --gradient-hero-green: linear-gradient(to right, hsl(187, 100%, 50%), hsl(196, 100%, 40%));
+    
     --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%), hsl(220, 13%, 98%));
     --gradient-cube: linear-gradient(45deg, hsl(217, 91%, 60%), hsl(142, 76%, 36%), hsl(217, 91%, 70%));
     --shadow-soft: 0 4px 20px -4px hsla(118, 71%, 40%, 0.15);
@@ -95,7 +99,7 @@ body {
     cursor: pointer;
 }
 .logo-image {
-    height: 2.5rem;
+    height: 3.5rem;
 }
 .logo-text {
     font-size: 1.25rem;
@@ -203,10 +207,10 @@ body {
     height: 160%;
     background: radial-gradient(
         circle farthest-corner at bottom center,
-        rgba(0, 200, 100, 0.5) 0%,
-        rgba(120, 255, 150, 0.4) 30%,
-        rgba(200, 255, 200, 0.3) 60%,
-        rgba(253, 253, 255, 1) 90%
+        hsla(189, 100%, 47%, 1) 0%,
+        /* rgba(120, 255, 150, 0.4) 30%, */
+        /* rgba(200, 255, 200, 0.3) 60%, */
+        rgba(253, 253, 253, 0.856) 20%
     );
     filter: blur(60px);
     z-index: -1;
