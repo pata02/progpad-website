@@ -319,7 +319,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    margin-top: 6rem;
+    
 }
 
 .kth-logo {
@@ -1424,10 +1424,12 @@ body {
 
     .hero-title {
         order: 1;
+        margin-bottom: 0.5rem;
     }
 
     .hero-image-container {
         order: 2;
+        width: 95%;
     }
 
     .hero-description {
@@ -1444,7 +1446,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 1rem 0 4rem 0;
+        margin: .25rem 0 4rem 0;
 
     }
 
@@ -1471,7 +1473,7 @@ body {
 
     .hero-buttons {
         margin-top: 0.5rem;
-        margin-bottom: 6rem;
+        margin-bottom: 0.5rem;
     }
 
     .hero-description {
