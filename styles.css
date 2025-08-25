@@ -130,7 +130,7 @@ body {
 }
 
 .logo-image {
-    height: 3rem;
+    height: 3.5rem;
 }
 
 .logo-text {
@@ -250,8 +250,6 @@ body {
 .hero {
     position: relative;
     min-height: 100vh;
-    height: 100vh;
-    /* Ensure hero background fills the viewport */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,14 +270,14 @@ body {
             rgba(0, 204, 240, 0.151) 85%,
             hsla(189, 100%, 47%, 0.5) 100%);
     filter: blur(60px);
-    z-index: -1;
+    z-index: -1;    
     pointer-events: none;
 }
 
 .hero-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10rem 1rem 4rem 1rem;
+    padding: 5rem 1rem;
 }
 
 .hero-grid {
@@ -321,7 +319,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    margin-top: 1rem;
+    margin-top: 6rem;
 }
 
 .btn-hero {
@@ -406,17 +404,6 @@ body {
     cursor: pointer;
     position: relative;
     animation: float 5s ease-in-out infinite;
-}
-
-.kth-logo {
-    width: 21rem;
-}
-
-.kth-logo-center {
-    display: flex;
-    justify-content: flex;
-    align-items: center;
-    margin: 3rem 0 1rem 0;
 }
 
 .play-button {
@@ -970,10 +957,12 @@ body {
 /* === Founders Section === */
 .founders-section {
     padding: 5rem 0;
-    background: radial-gradient(circle farthest-corner at bottom center,
-            hsla(196, 80%, 47%, 0.1) 0%,
-            hsla(196, 60%, 80%, 0.1) 20%,
-            hsla(0, 0%, 100%, 0.7) 100%);
+    background: radial-gradient(
+    circle farthest-corner at bottom center,
+    hsla(196, 80%, 47%, 0.1) 0%,
+    hsla(196, 60%, 80%, 0.1) 20%,
+    hsla(0, 0%, 100%, 0.7) 100%
+    );
 }
 
 .founders-grid {
@@ -1400,33 +1389,6 @@ body {
 }
 
 @media (max-width: 767px) {
-    .nav-content {
-        height: 2.5rem;
-        padding-top: 0.25rem;
-        padding-bottom: 0.25rem;
-    }
-
-    .logo-image {
-        height: 1.5rem;
-    }
-
-    .hero {
-        padding-top: 3.5rem;
-        /* Reduced top padding so hero content fits below navbar */
-        min-height: 100vh;
-        height: auto;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    .hero-container {
-        padding-top: 1.5rem;
-        /* Less top padding for more space */
-        padding-bottom: 6rem;
-        position: relative;
-    }
-
     .hero-content {
         display: contents;
     }
@@ -1434,81 +1396,29 @@ body {
     .hero-grid {
         display: flex;
         flex-direction: column;
-        gap: 1.2rem;
-        /* Slightly reduced gap for tighter layout */
+        gap: 1.5rem;
     }
 
     .hero-title {
         order: 1;
-        margin-bottom: 1rem;
-        /* Reduce space below title */
     }
 
     .hero-image-container {
         order: 2;
-        margin-bottom: 1rem;
-        /* Add space below image */
     }
 
     .hero-description {
         order: 3;
         font-size: 1.1rem;
-        margin-bottom: 1rem;
-        /* Reduce space below description */
-        margin-left: auto !important;
-        margin-right: auto !important;
-        max-width: 90vw;
-    }
-
-    .btn-hero {
-        font-size: 0.9rem;
-        /* height: 2.4rem; */
-        width: auto;
-        padding: 0 0.5rem;
-        border-radius: 1.5rem;
-        min-width: rem;
-        /* Make "Läs mer" button a bit smaller on phone */
     }
 
     .video-popup-bg {
         background: rgba(12, 20, 12, 0.95);
     }
 
-    .kth-logo {
-        width: 12rem;
-        /* Slightly smaller logo for mobile */
-        max-width: 60vw;
-    }
-
-    .kth-logo-center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1rem 0 4rem 0;
-        /* Increased bottom margin for more space below KTH logo */
-    }
-
-    .hero-image {
-        width: 100%;
-        height: auto;
-        max-height: 140px;
-        object-fit: contain;
-    }
-
-    .hero-buttons {
-        margin-top: 2.5rem;
-        /* Increased top margin for more space above button */
-        margin-bottom: 2rem;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 2.5rem;
-        justify-content: center;
-    }
-
     .section-header {
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     .section-description {
@@ -1516,9 +1426,23 @@ body {
         margin-bottom: 0rem;
     }
 
+    .logo-image {
+        height: 1.8rem;
+    }
+
     .nav {
         background: hsla(0, 0%, 100%, 0.75);
         backdrop-filter: blur(12px);
+    }
+
+    .hero-buttons {
+        margin-top: 0.5rem;
+        margin-bottom: 6rem;
+    }
+
+    .hero-description {
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
     .video-popup iframe {
@@ -1530,7 +1454,6 @@ body {
 
     .features-grid {
         gap: 1rem;
-        margin-bottom: 6rem;
     }
 
     .timeline-container {
@@ -1560,6 +1483,10 @@ body {
 
     .timeline-circle {
         left: 1rem;
+    }
+
+    .features-grid {
+        margin-bottom: 6rem;
     }
 
     .product-image {
@@ -1628,37 +1555,36 @@ body {
         transform: rotate(-45deg) translate(7px, -6px);
     }
 
-    .cube-1,
-    .cube-2,
-    .cube-3 {
-        width: 2.5rem !important;
-        height: 2.5rem !important;
-        opacity: 0.5;
-    }
-
-    .floating-cube.cube-3 {
-        display: none;
-    }
-
-    .hero-title,
-    .hero-highlight {
-        font-size: 2.1rem;
-        line-height: 1.15;
+    .founders-section {
+        padding-bottom: 2rem;
     }
 
     .founders-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
-        margin-bottom: 0;
-        max-width: 100vw;
-        padding: 0 1rem;
+        margin-bottom: 0
     }
 
-    .founder-card {
-        max-width: 100%;
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        box-sizing: border-box;
+    .floating-cube.cube-3 {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .concepts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-options {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info-grid {
+        grid-template-columns: 1fr;
     }
 }
