@@ -130,7 +130,7 @@ body {
 }
 
 .logo-image {
-    height: 3.5rem;
+    height: 3rem;
 }
 
 .logo-text {
@@ -1401,6 +1401,17 @@ body {
 }
 
 @media (max-width: 767px) {
+
+    .nav-content {
+        height: 3rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .logo-image {
+        height: 2.2rem;
+    }
+
     .hero-content {
         display: contents;
     }
@@ -1451,9 +1462,7 @@ body {
         margin-bottom: 0rem;
     }
 
-    .logo-image {
-        height: 1.8rem;
-    }
+
 
     .nav {
         background: hsla(0, 0%, 100%, 0.75);
