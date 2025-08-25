@@ -322,6 +322,17 @@ body {
     margin-top: 6rem;
 }
 
+.kth-logo {
+    width: 21rem;
+}
+
+.kth-logo-center {
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    margin: 3rem 0 1rem 0;
+}
+
 .btn-hero {
     font-size: 1rem;
     font-weight: 400;
@@ -1410,6 +1421,19 @@ body {
     .hero-description {
         order: 3;
         font-size: 1.1rem;
+    }
+
+    .kth-logo {
+        width: 12rem;
+        margin-left: 1.2rem;
+    }
+
+    .kth-logo-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0 4rem 0;
+
     }
 
     .video-popup-bg {
