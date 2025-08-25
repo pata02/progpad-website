@@ -1504,14 +1504,6 @@ body {
         left: 1rem;
     }
 
-    .feature-card {
-        max-width: 90vw;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
-    }
-
     .timeline-item:last-child::after,
     .timeline-item:first-child::after {
         left: 1rem;
