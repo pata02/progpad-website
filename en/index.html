@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProgPad – Lekfullt. Logiskt. Lärorikt.</title>
+    <title>ProgPad – Playful. Logical. Educational.</title>
     <meta name="description"
-        content="ProgPad är ett fysiskt programmeringsverktyg som gör programmering begripligt genom interaktiva klossar och direkt återkoppling.">
+        content="ProgPad is a physical programming tool that makes coding understandable through interactive blocks and instant feedback.">
     <meta name="author" content="ProgPad">
 
-    <meta property="og:title" content="ProgPad – Lekfullt. Logiskt. Lärorikt.">
+    <meta property="og:title" content="ProgPad – Playful. Logical. Educational.">
     <meta property="og:description"
-        content="ProgPad gör programmering begripligt och engagerande genom fysiska interaktioner.">
+        content="ProgPad makes programming understandable and engaging through physical interactions.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/opengraph-placeholder.png">
 
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
@@ -24,14 +24,14 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- Canonical + language alternates -->
-  <link rel="canonical" href="https://www.progpad.se/">
+  <link rel="canonical" href="https://www.progpad.se/en/">
   <link rel="alternate" href="https://www.progpad.se/" hreflang="sv">
   <link rel="alternate" href="https://www.progpad.se/en/" hreflang="en">
   <link rel="alternate" href="https://www.progpad.se/" hreflang="x-default">
 
   <!-- Open Graph locale -->
-  <meta property="og:locale" content="sv_SE">
-  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="sv_SE">
 </head>
 
 <body>
@@ -40,31 +40,30 @@
         <div class="nav-container">
             <div class="nav-content">
                 <div class="nav-logo" data-section="home">
-                    <img src="images/ProgPad_Logo_Black_Text.webp" alt="ProgPad" class="logo-image">
+                    <img src="/images/ProgPad_Logo_Black_Text.webp" alt="ProgPad" class="logo-image">
                 </div>
                 <div class="nav-links">
-                    <button class="nav-link active" data-section="home">Start</button>
-                    <button class="nav-link" data-section="product">Produkt</button>
+                    <button class="nav-link active" data-section="home">Home</button>
+                    <button class="nav-link" data-section="product">Product</button>
                     <button class="nav-link" data-section="founders">Team</button>
-                    <button class="nav-link" data-section="contact">Kontakt</button>
+                    <button class="nav-link" data-section="contact">Contact</button>
                 </div>
                 <div class="lang-switch">
-                        <a href="/en/" class="lang-btn">
-                            <span class="material-symbols-rounded">language</span> EN
-                        </a>
-                    </div>
+                    <a href="/" class="lang-btn">
+                        <span class="material-symbols-rounded">language</span> SV
+                    </a>
+                </div>
                 <button class="mobile-menu-btn">
                     <span class="hamburger"></span>
                     <span class="hamburger"></span>
                     <span class="hamburger"></span>
                 </button>
             </div>
-
             <div class="mobile-nav">
-                <button class="mobile-nav-link active" data-section="home">Start</button>
-                <button class="mobile-nav-link" data-section="product">Produkt</button>
+                <button class="mobile-nav-link active" data-section="home">Home</button>
+                <button class="mobile-nav-link" data-section="product">Product</button>
                 <button class="mobile-nav-link" data-section="founders">Team</button>
-                <button class="mobile-nav-link" data-section="contact">Kontakt</button>
+                <button class="mobile-nav-link" data-section="contact">Contact</button>
             </div>
         </div>
     </nav>
@@ -76,19 +75,18 @@
                 <div class="hero-grid">
                     <div class="hero-content">
                         <h1 class="hero-title reveal from-left">
-                            Kod du kan ta på.<br>
-                            <span class="hero-highlight reveal from-left">Lekfullt. Logiskt. Lärorikt.</span>
+                            Code you can touch.<br>
+                            <span class="hero-highlight reveal from-left">Playful. Logical. Educational.</span>
                         </h1>
                         <p class="hero-description reveal from-bottom">
-                            Ett fysiskt verktyg som öppnar dörren till programmering för alla, oavsett ålder eller
-                            bakgrund. <strong>ProgPad</strong> förvandlar kod till något du kan se, röra och förstå.
+                            A physical tool that opens the door to programming for everyone, regardless of age or background. <strong>ProgPad</strong> turns code into something you can see, touch, and understand.
                         </p>
                     </div>
                     <div class="hero-image-container reveal from-top">
                         <div class="hero-image-wrapper" id="show-video">
-                            <img src="images/video-thumbnail.jpg" alt="ProgPad enhet" class="hero-image reveal">
+                            <img src="/images/video-thumbnail.jpg" alt="ProgPad device" class="hero-image reveal">
                             <div class="hero-image-overlay"></div>
-                            <button class="play-button" aria-label="Spela video">
+                            <button class="play-button" aria-label="Play video">
                                 <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" height="48px"
                                     viewBox="0 -960 960 960" width="48px" fill="5f81f4ff">
                                     <path
@@ -104,12 +102,12 @@
                 </div>
 
                 <div class="kth-logo-center reveal from-left">
-                    <img src="images/Kth_Logo.png" alt="Supported by KTH Innovations" class="kth-logo">
+                    <img src="/images/Kth_Logo.png" alt="Supported by KTH Innovations" class="kth-logo">
                 </div>
 
                 <div class="hero-buttons reveal from-bottom">
                     <button class="btn-hero btn-outline" data-section="product">
-                        Läs mer
+                        Read more
                         <span class="material-symbols-rounded btn-icon">keyboard_arrow_down</span>
                     </button>
                 </div>
@@ -132,7 +130,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">
-                        Vad är <span class="text-gradient">ProgPad?</span>
+                        What is <span class="text-gradient">ProgPad?</span>
                     </h2>
                     <div class="timeline-container">
                         <!-- Timeline Items -->
@@ -140,29 +138,23 @@
                             <div class="timeline-circle gray">
                                 <span class="material-symbols-rounded">lightbulb</span>
                             </div>
-                            <div class="timeline-text"><span class="emphasis">ProgPad</span> började som ett <a
+                            <div class="timeline-text"><span class="emphasis">ProgPad</span> started as a <a
                                     href="https://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-367694"
-                                    target="_blank">examensarbete</a> på KTH med syftet att utforska hur
-                                programmeringsundervisning i grundskolan kunde göras mer konkret och begripligt.</div>
+                                    target="_blank">thesis project</a> at KTH, aiming to explore how programming education in schools could be made more concrete and understandable.</div>
                         </div>
                         <div class="timeline-line"></div>
                         <div class="timeline-item">
                             <div class="timeline-circle light-green">
                                 <span class="material-symbols-rounded">control_camera</span>
                             </div>
-                            <div class="timeline-text">Målet var att skapa ett verktyg som kombinerar teknik och
-                                pedagogik på ett sätt som både engagerar och underlättar inlärning – särskilt för yngre
-                                elever och nybörjare.</div>
+                            <div class="timeline-text">The goal was to create a tool that combines technology and pedagogy in a way that both engages and facilitates learning – especially for younger students and beginners.</div>
                         </div>
                         <div class="timeline-item last-timeline-item">
                             <div class="timeline-circle bright-green">
                                 <span class="material-symbols-rounded">check</span>
                             </div>
-                            <div class="timeline-text"><span class="emphasis">ProgPad</span> är resultatet: <span
-                                    class="emphasis">en fysisk enhet där elever sätter samman program med hjälp av
-                                    kodklossar</span> – varje kloss representerar ett programmeringsbegrepp som till
-                                exempel en variabel, loop eller villkorssats. Detta ger ett konkret och intuitivt sätt
-                                att närma sig programmering, där logik möter lek och abstrakta begrepp blir greppbara.
+                            <div class="timeline-text"><span class="emphasis">ProgPad</span> is the result: <span
+                                    class="emphasis">a physical device where students assemble programs using code blocks</span> – each block represents a programming concept such as a variable, loop, or conditional. This provides a concrete and intuitive way to approach programming, where logic meets play and abstract concepts become tangible.
                             </div>
                         </div>
                     </div>
@@ -171,88 +163,73 @@
                 <div class="features-grid">
                     <div class="feature-card">
                         <span class="material-symbols-rounded brain-icon">neurology</span>
-                        <h3 class="feature-title">Brett undervisningsstöd</h3>
-                        <p class="feature-description">Ger stöd för undervisning i allt från grundläggande till
-                            avancerade programmeringskoncept – som variabler, loopar, villkor, logiska operatorer och
-                            booleska uttryck. Allt i ett enkelt men uttrycksfullt programmeringsspråk.</p>
+                        <h3 class="feature-title">Broad teaching support</h3>
+                        <p class="feature-description">Supports teaching everything from basic to advanced programming concepts – such as variables, loops, conditionals, logical operators, and boolean expressions. All in a simple yet expressive programming language.</p>
                     </div>
                     <div class="feature-card">
                         <span class="material-symbols-rounded bulb-icon">model_training</span>
-                        <h3 class="feature-title">Omedelbar feedback</h3>
-                        <p class="feature-description">Direkt feedback via ljud, ljus och display visualiserar
-                            programmets körning i realtid. Elever följer varje steg, ser hur variabler förändras och
-                            förstår programmets logik utan att tappa tråden.</p>
+                        <h3 class="feature-title">Instant feedback</h3>
+                        <p class="feature-description">Immediate feedback via sound, light, and display visualizes the program's execution in real time. Students follow each step, see how variables change, and understand the program's logic without losing track.</p>
                     </div>
                     <div class="feature-card">
                         <span class="material-symbols-rounded wifi-icon">cloud_off</span>
-                        <h3 class="feature-title">Klassrumsvänlig design</h3>
-                        <p class="feature-description">Kräver varken dator eller extern mjukvara som ofta strular – allt
-                            sker direkt på enheten. Den är snabb att komma igång med, enkel att använda och fri från
-                            distraktioner, vilket låter eleverna fokusera helt på programmeringen.</p>
+                        <h3 class="feature-title">Classroom-friendly design</h3>
+                        <p class="feature-description">Requires neither a computer nor external software that often fails – everything happens directly on the device. It's quick to get started, easy to use, and free from distractions, allowing students to focus entirely on programming.</p>
                     </div>
                 </div>
 
                 <div class="section-header">
                     <h2 class="section-title">
-                        <span class="text-gradient-secondary">Utforska</span> ProgPad
+                        <span class="text-gradient-secondary">Explore</span> ProgPad
                     </h2>
                     <p class="section-description">
-                        Använd markörerna för att visa mer information om ProgPads funktioner.
+                        Use the markers to show more information about ProgPad's features.
                     </p>
                 </div>
 
                 <div class="product-image">
-                    <img src="images/progpadgrid.webp" alt="produktbild" class="progpad-image">
+                    <img src="/images/progpadgrid.webp" alt="product image" class="progpad-image">
                     <!-- Markers and tooltips -->
                     <div class="marker" style="top: 28.5%; left: 76.5%;">
                         <div class="pulse-ring"></div>
                         <div class="marker-dot"></div>
                     </div>
-                    <div class="tooltip"><strong>Rutnät för klossar</strong><br>Här placeras programmeringsklossar rad
-                        för rad för att bygga ett program.</div>
+                    <div class="tooltip"><strong>Grid for blocks</strong><br>This is where programming blocks are placed row by row to build a program.</div>
                     <div class="marker" style="top: 7%; left: 50%;">
                         <div class="pulse-ring"></div>
                         <div class="marker-dot"></div>
                     </div>
-                    <div class="tooltip"><strong>Radindikator</strong><br>Bredvid varje rad finns en lysdiod som bland
-                        annat visar vilken rad som körs under programmets gång.</div>
+                    <div class="tooltip"><strong>Row indicator</strong><br>Next to each row is an LED that shows, among other things, which row is being executed during program execution.</div>
                     <div class="marker" style="top: 48.5%; left: 14.2%;">
                         <div class="pulse-ring"></div>
                         <div class="marker-dot"></div>
                     </div>
-                    <div class="tooltip"><strong>Start / Reset-knapp</strong><br>Används för att starta, pausa och
-                        återställa programmet som användaren har byggt.</div>
+                    <div class="tooltip"><strong>Start / Reset button</strong><br>Used to start, pause, and reset the program the user has built.</div>
                     <div class="marker" style="top: 40%; left: 19.7%;">
                         <div class="pulse-ring"></div>
                         <div class="marker-dot"></div>
                     </div>
-                    <div class="tooltip"><strong>Hastighetsreglage</strong><br>Justerar hur snabbt varje rad i
-                        programmet körs.</div>
+                    <div class="tooltip"><strong>Speed control</strong><br>Adjusts how quickly each row in the program is executed.</div>
                     <div class="marker" style="top: 58.5%; left: 28.2%;">
                         <div class="pulse-ring"></div>
                         <div class="marker-dot"></div>
                     </div>
-                    <div class="tooltip"><strong>Display</strong><br>Visar bland annat variabelvärden under programmets
-                        gång och information om syntaxfel med mera.</div>
+                    <div class="tooltip"><strong>Display</strong><br>Shows, among other things, variable values during program execution and information about syntax errors, etc.</div>
                     <div class="marker" style="top: 68.5%; left: 44.2%;">
                         <div class="pulse-ring"></div>
                         <div class="marker-dot"></div>
                     </div>
-                    <div class="tooltip"><strong>Input-switchar</strong><br>Kan användas som input till programmet i
-                        form av ett booleskt värde (sant eller falskt), för att exempelvis skapa uttryck i
-                        villkorssatser.</div>
+                    <div class="tooltip"><strong>Input switches</strong><br>Can be used as input to the program in the form of a boolean value (true or false), for example to create expressions in conditionals.</div>
                     <div class="marker" style="top: 72.5%; left: 55%;">
                         <div class="pulse-ring"></div>
                         <div class="marker-dot"></div>
                     </div>
-                    <div class="tooltip"><strong>Output-lysdiod</strong><br>Kan användas som output till programmet som
-                        användaren skapar och tändas i olika färger med hjälp av lys-klossar.</div>
+                    <div class="tooltip"><strong>Output LED</strong><br>Can be used as output for the program the user creates and lit in different colors using light blocks.</div>
                     <div class="marker" style="top: 78.7%; left: 46%;">
                         <div class="pulse-ring"></div>
                         <div class="marker-dot"></div>
                     </div>
-                    <div class="tooltip"><strong>Högtalare</strong><br>Kan styras genom programmet som användaren skapar
-                        med hjälp av ljud-klossar.</div>
+                    <div class="tooltip"><strong>Speaker</strong><br>Can be controlled through the program the user creates using sound blocks.</div>
                     <div class="connector" id="connector"></div>
                     <div class="tooltip" id="tooltip"></div>
                 </div>
@@ -263,33 +240,33 @@
         <section id="founders" class="founders-section fading-dot-grid">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Teamet bakom <span class="text-gradient">ProgPad</span></h2>
+                    <h2 class="section-title">The team behind <span class="text-gradient">ProgPad</span></h2>
                     <p class="section-description">
-                        Två civilingenjörsstudenter med ett gemensamt driv för teknik, innovation och lösningar som gör skillnad.
+                        Two engineering students with a shared passion for technology, innovation, and solutions that make a difference.
                     </p>
                 </div>
                 <div class="founders-grid">
                     <div class="founder-card">
                         <div class="founder-image-wrapper">
-                            <img src="images/linkedinPatrik.jpeg" alt="Patrik Eriksson" class="founder-image">
+                            <img src="/images/linkedinPatrik.jpeg" alt="Patrik Eriksson" class="founder-image">
                         </div>
                         <div class="founder-info">
                             <h3 class="founder-name">Patrik Eriksson</h3>
-                            <h4 class="founder-role">Medgrundare</h4>
-                            <p class="founder-description">Civilingenjörsstudent i informationsteknik vid KTH.</p>
-                            <a href="https://www.linkedin.com/in/patreri/" class="linkedin-button">LinkedIn-profil</a>
+                            <h4 class="founder-role">Co-founder</h4>
+                            <p class="founder-description">Engineering student in Information Technology at KTH.</p>
+                            <a href="https://www.linkedin.com/in/patreri/" class="linkedin-button">LinkedIn profile</a>
                         </div>
                     </div>
                     <div class="founder-card">
                         <div class="founder-image-wrapper">
-                            <img src="images/linkedinGustav.jpg" alt="Gustav Eriksson" class="founder-image">
+                            <img src="/images/linkedinGustav.jpg" alt="Gustav Eriksson" class="founder-image">
                         </div>
                         <div class="founder-info">
                             <h3 class="founder-name">Gustav Eriksson</h3>
-                            <h4 class="founder-role">Medgrundare</h4>
-                            <p class="founder-description">Civilingenjörsstudent i informationsteknik vid KTH.</p>
+                            <h4 class="founder-role">Co-founder</h4>
+                            <p class="founder-description">Engineering student in Information Technology at KTH.</p>
                             <a href="https://www.linkedin.com/in/gustav-eriksson-86a671309/"
-                                class="linkedin-button">LinkedIn-profil</a>
+                                class="linkedin-button">LinkedIn profile</a>
                         </div>
                     </div>
                 </div>
@@ -300,20 +277,19 @@
         <section id="contact" class="contact-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Vill du <span class="text-gradient-secondary">veta mer?</span></h2>
-                    <p class="section-description">Kontakta oss så berättar vi gärna mer och svarar på frågor om teknik,
-                        pedagogik och möjligheter att testa ProgPad i er verksamhet.</p>
+                    <h2 class="section-title">Want to <span class="text-gradient-secondary">know more?</span></h2>
+                    <p class="section-description">Contact us and we'll be happy to tell you more and answer questions about technology, pedagogy, and opportunities to try ProgPad in your organization.</p>
                 </div>
                 <div class="contact-box">
                     <div class="feature-card">
                         <span class="material-symbols-rounded email-icon">mail</span>
-                        <h3 class="feature-title">Kontakta oss</h3>
+                        <h3 class="feature-title">Contact us</h3>
                         <div class="email-row">
 
-                            <a href="mailto:info@progpad.se?subject=Hej%20ProgPad">info@progpad.se</a>
+                            <a href="mailto:info@progpad.se?subject=Hello%20ProgPad">info@progpad.se</a>
                         </div>
 
-                        <h3 class="feature-title2">Följ vår utveckling</h3>
+                        <h3 class="feature-title2">Follow our journey</h3>
                         <div class="social-icons">
 
                             <a href="https://www.linkedin.com/company/progpad/" target="_blank" aria-label="LinkedIn">
@@ -355,7 +331,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/script.js" defer></script>
 </body>
 
 </html>
